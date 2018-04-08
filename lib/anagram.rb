@@ -6,9 +6,9 @@ class Anagram
     @word = word
   end
 
-  def match(poss_anag)
-    ana_arr = %w(poss_anag)
-
+  def match(ana_arr)
+    result = ana_arr.select {|w| w.sort == @word}
+    result
   end
 
 end
