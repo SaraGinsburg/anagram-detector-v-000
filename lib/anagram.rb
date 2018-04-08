@@ -2,12 +2,12 @@
 class Anagram
   attr_accessor :word, :ana_arr
 
-  def initialize(word, ana_arr)
+  def initialize(word)
     @word = word
-    @ana_arr = ana_arr
+  
   end
 
-  def match
+  def match(ana_arr)
     result = ana_arr.select {|w| w.sort == @word}
     result
   end
