@@ -8,7 +8,7 @@ class Anagram
   end
 
   def match(ana_arr)
-    result = ana_arr.select {|w| w.split('').sort.join('') == @word.split('').join('')}
+    result = ana_arr.select {|w| w.split('').sort.join('') == @word.split('').sort.join('')}
     result
   end
 
