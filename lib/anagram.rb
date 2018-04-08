@@ -8,7 +8,7 @@ class Anagram
 
   def match(poss_anag)
     ana_arr = %w(poss_anag)
-    
+
   end
 
 end
